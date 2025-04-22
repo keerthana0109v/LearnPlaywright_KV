@@ -12,4 +12,16 @@ test(`Web login demo`, async ({page}) => {
     await page.locator(`//*[@type='password']`).fill(faker.string.alphanumeric(10));
     await page.locator(`#submit`).click();
     await page.waitForTimeout(3000);
+    await page.locator(`#add-contact`).click()
 })
+
+
+
+//https://thinking-tester-contact-list.herokuapp.com/contactList
+
+// test(`add a new contact`, async ({page})=>{
+//     await page.goto(`https://thinking-tester-contact-list.herokuapp.com/contactList`);
+//     await page.waitForLoadState(`domcontentloaded`);
+//     await page.locator(`#add-contact`).click()
+// })
+

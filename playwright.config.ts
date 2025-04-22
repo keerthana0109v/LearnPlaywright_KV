@@ -41,7 +41,8 @@ export default defineConfig({
           use: { ...devices['Chrome'],
             launchOptions: {
               headless: false,
-              args: ['--window-size=3840,2160',],
+              //args: ['--window-size=3840,2160',],
+              args: ['--start-maximized'],
              },
            },
         },
